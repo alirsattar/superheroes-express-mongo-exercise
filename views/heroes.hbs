@@ -1,0 +1,15 @@
+<h1>ALL HEROES</h1>
+
+{{#each heroesArray}}
+
+    <P>{{name}}, {{headquarters}}, <img src="{{symbol}}" height="200" width="200">
+
+        {{#each this.powers}}
+
+        <li>{{this}}</li>
+
+        {{/each}}
+
+    <a href="/one-hero/{{this._id}}">Hero Details</a>
+
+{{/each}}
